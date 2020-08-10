@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground"
+    android:clickable="true">
+    <TextView
+        android:id="@+id/index_in_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-"
+        android:textColor="#A03DBA"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        />
+<TextView
+    android:id="@+id/word_in_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="example of word"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="40dp"
+    android:gravity="center"
+    android:textColor="#A03DBA"
+    android:background="#00FFFFFF"
+    ></TextView>
+    <TextView
+        android:id="@+id/meaning_in_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="معنى الكلمة"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:textColor="#A03DBA"
+        android:background="#00FFFFFF"
+        />
+    <ImageView
+        android:id="@+id/voice_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/voice"
+        ></ImageView>
+    <TextView
+        android:id="@+id/example_in_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/voice_icon"
+        android:text="For example : "
+        android:textColor="#A03DBA"
+        android:background="#00FFFFFF"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="45dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/example_in_card"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="#494444"
+        />
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".Activities.SignUp">
+
+        <TextView
+            android:id="@+id/tv_email1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your email"
+            android:textSize="24dp"
+            android:inputType="textEmailAddress"
+            android:fontFamily="serif-monospace"
+            android:textColor="#A03DBA"
+
+            ></TextView>
+
+        <EditText
+            android:id="@+id/ed_email1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext"
+            android:drawableLeft="@drawable/login_icon"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#A03DBA"
+
+            android:textSize="14sp"
+
+            ></EditText>
+
+        <TextView
+            android:id="@+id/tv_password1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your password"
+            android:textSize="24dp"
+            android:inputType="textEmailAddress"
+            android:fontFamily="serif-monospace"
+            android:textColor="#A03DBA"
+            android:layout_marginTop="20dp"
+
+
+            ></TextView>
+
+        <EditText
+            android:id="@+id/ed_password1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext"
+            android:drawableLeft="@drawable/password_icon"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="textPassword"
+            android:textColor="#A03DBA"
+            android:textSize="14sp"
+            ></EditText>
+
+
+        <Button
+            android:onClick="onclickSignup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sign up"
+            android:layout_marginHorizontal="50dp"
+            android:background="@drawable/sign_in_button"
+            android:textColor="#FFF"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            tools:ignore="OnClick"></Button>
+
+    </LinearLayout>

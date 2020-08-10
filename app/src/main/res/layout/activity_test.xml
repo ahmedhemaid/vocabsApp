@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.HardTest">
+    <RelativeLayout
+        android:id="@+id/not_first_vocab"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English word"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:textColor="#A03DBA"
+            android:background="#00FFFFFF"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/above_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:text="المعنى بالعربي"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="#A03DBA"
+            android:background="#00FFFFFF"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/above_view"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:background="#494444"
+            />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_all_vocabs_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="50dp"
+        tools:listitem="@layout/card_test_vocab"
+        android:layout_marginBottom="75dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:onClick="done_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="done"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/sign_in_button"
+        android:textColor="#FFF"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/done"
+        android:padding="10dp"
+        android:drawablePadding="-20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

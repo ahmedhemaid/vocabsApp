@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Activities.NewVocab">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        >
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't forget : To be native speaker you need more vocabs"
+        android:gravity="center"
+        android:textColor="#A03DBA"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="24sp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter English word :"
+        android:layout_marginLeft="10dp"
+        android:textColor="#A03DBA"
+        android:textSize="18dp"
+        />
+        <EditText
+            android:id="@+id/word_in_new"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#A03DBA"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:id="@+id/meaning_in_new"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#A03DBA"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أدخل المعنى بالعربية :"
+            android:textColor="#A03DBA"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:layout_marginRight="10dp"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="don't know the meaning ?"
+            android:textColor="#A03DBA"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:onClick="onClickTranslate"
+            android:id="@+id/translate_in_new"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="translate"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:textSize="14dp"
+            android:textColor="#A03DBA"
+            android:clickable="true"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter an example in english :"
+        android:textColor="#A03DBA"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+
+        />
+    <EditText
+        android:id="@+id/example_in_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#A03DBA"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="text"
+        />
+    <Button
+        android:onClick="saveNewVocab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="save"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/sign_in_button"
+        android:textColor="#FFF"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/save"
+        android:padding="10dp"
+        android:drawablePadding="-20dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

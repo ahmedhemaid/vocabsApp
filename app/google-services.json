@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "311381045003",
+    "firebase_url": "https://myvocabularies-c7694.firebaseio.com",
+    "project_id": "myvocabularies-c7694",
+    "storage_bucket": "myvocabularies-c7694.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311381045003:android:c5731ca62f6028c2b4fc0e",
+        "android_client_info": {
+          "package_name": "com.example.myvocabularies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311381045003-sh16ah7altarmmu9hi3gdu4dogas8qdl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myvocabularies",
+            "certificate_hash": "ba239d36af9a8298184dd8c70da7bca67d522e0a"
+          }
+        },
+        {
+          "client_id": "311381045003-4k5204ussgit296gkvbnqn4irb7fqq64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwrZC1pW4WVe0JP_VxMZoPJOBj1EflShc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311381045003-4k5204ussgit296gkvbnqn4irb7fqq64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

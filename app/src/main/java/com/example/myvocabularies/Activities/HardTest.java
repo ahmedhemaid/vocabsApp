@@ -48,7 +48,7 @@ public class HardTest extends AppCompatActivity  {
         editContents=new ArrayList<>();
         correctAnswers=new ArrayList<>(staticVocabs.size());
         wrongAnswers=new ArrayList<>(staticVocabs.size());
-        getSupportActionBar().setTitle("Test vocabs");
+        getSupportActionBar().setTitle("Hard Test");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //calender
         calendar = Calendar.getInstance();
@@ -90,7 +90,7 @@ public class HardTest extends AppCompatActivity  {
                 .setPositiveButton("Ok", null)
                 .setNegativeButton("go to archive", null)
                 .show();
-        Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
+        final Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
         positiveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

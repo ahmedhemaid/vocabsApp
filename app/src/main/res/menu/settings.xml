@@ -7,7 +7,6 @@
         android:id="@+id/add_vocab"
         android:title="Add vocab"
         app:showAsAction="never"
-        android:icon="@drawable/add"
         ></item>
     <item
         android:id="@+id/have_test"
@@ -19,13 +18,11 @@
             android:id="@+id/easy_test"
             android:title="Easy test"
             app:showAsAction="never"
-            android:icon="@drawable/add"
             ></item>
         <item
             android:id="@+id/hard_test"
             android:title="Hard test"
             app:showAsAction="never"
-            android:icon="@drawable/add"
             ></item>
         </menu>
     </item>
